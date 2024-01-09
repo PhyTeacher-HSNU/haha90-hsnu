@@ -1,0 +1,35 @@
+label {
+	font-family: Arial, "Microsoft YaHei";
+	font-size: 24px;
+	text-align: left;
+}
+#mainAnimation{
+	position: relative;
+	width: 1410px;
+	height: 800px;
+
+	margin: 0px auto;
+
+}
+#left{
+	position: absolute;
+	left: 0;
+}
+#right{
+	/*位置*/
+	position: absolute;
+	left: 1010px;
+	background-color: #6699CC;
+	height: 754px;
+	width: 400px;
+
+	/*外框*/
+	border: 3px solid;
+    border-radius: 5px;
+    border-color: #000099;
+
+    /*內縮*/
+    padding: 20px 15px 20px 15px;
+
+
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta lang="zh-hant-TW">
+		<meta charset="UTF-8">
+		<meta name="viewport" content="user-scalable=0">
+		<meta name="viewport" content="user-scalable=no">
+
+		<link rel="stylesheet" type="text/css" href="allData/css/myStyle.css">
+		<title>做動畫學物理</title>
+
+		
+	</head>
+
+	<body>
+		<div id="mainAnimation"></div>
+
+
+
+
+		<script id="2d-vertex-shader" type="x-shader/x-vertex">
+			attribute vec2 a_position;
+		  	void main() {
+			   gl_Position = vec4(a_position, 0, 1);
+		  	}
+		</script>
+	
+		<script id="2d-fragment-shader" type="x-shader/x-fragment">// <![CDATA[
+		  #define NUM_STEPS   500
+		  #define ZOOM_FACTOR 2.0
+		  #define X_OFFSET    0.5
+		  #define PI 3.1415926538
+	
+		  #ifdef GL_FRAGMENT_PRECISION_HIGH
+			precision highp float;
+	  	#else
+			precision mediump float;
+		#endif
+			precision mediump int;
+		
+		/*vars*/
+		uniform float sunX;
+		uniform float sunY;
+		uniform float sunZ;
+		
+	 	void main() {
+			
+			
+			
+			float _latitude = (gl_FragCoord.y-256.0)/512.0*PI;//GLSL y 向上為正
+			float _longitude = -(gl_FragCoord.x-256.0)/512.0*2.0*PI;
+			float _X = cos(_latitude)*cos(_longitude);
+			float _Y = sin(_latitude);
+			float _Z = cos(_latitude)*sin(_longitude);
+
+			float ddot = step(0.0,_X*sunX + _Y*sunY + _Z*sunZ);
+
+	
+			gl_FragColor = vec4(0.0, 0.0, 0.0, 0.6-0.6*ddot);
+	
+	  	}
+	// ]]></script>
+
+		<!--script external-->
+		<script src="allData/js/jquery/jquery-2.2.2.min.js"></script>
+		<script src="allData/js/createjs/tweenjs.min.js"></script>
+		<script src="allData/js/createjs/easeljs.min.js"></script>
+		<!--script animateCC-->
+		<script src="allData/js/animate/myAnimate.js"></script>
+		<!--script ThreeJS-->
+		<script src="allData/js/threejs/three.min.js"></script>
+		<script src="allData/js/threejs/three.lines.js"></script>
+		<!--script teacher-->
+		<script src="allData/pics/pics.js"></script>
+		<script src="allData/js/teacherJS/teacher.js"></script>
+		<!--script student-->
+		<script src="allData/js/myScript.js"></script>
+
+	
+	</body>
+</html>

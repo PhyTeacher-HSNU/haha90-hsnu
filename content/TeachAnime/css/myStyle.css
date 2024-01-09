@@ -1,0 +1,56 @@
+body{
+	
+	font-size: 2em;
+	font-family : Cambria,"Microsoft YaHei", "Microsoft JhengHei", PMingLiU, 'Times New Roman', Times, serif;
+	color: #000;
+	background: #CFF;
+
+}
+
+/*side bar*/
+#sidebar-wrapper{
+	background: #003;
+}
+#sidebar-wrapper .line{
+	font-size: 1.4rem;
+	color: #9cc;
+}
+#sidebar-wrapper .sidebar-brand{
+	font-size: 3rem;
+	color: #cff;
+}
+#sidebar-wrapper .pageNow{
+	color: #003;
+	background: #CFF;
+}
+
+/*content*/
+#page-content-wrapper{
+	background: #CFF;
+}
+#page-content-wrapper hr {
+    display: block;
+    height: 1.5px;
+    border: 0;
+    border-top: 2px solid #366;
+    margin: 1em 0;
+    padding: 0; 
+}
+
+@media(min-width:768px) {/*大螢幕時*/
+    #page-content-wrapper h1 {
+    	font-size: 3em;
+	}
+}
+@media(max-width:767px) {/*小螢幕時*/
+    #page-content-wrapper h1 {
+    	font-size: 2em;
+	}
+}
+
+
+
+/*iframe*/
+#iframe{
+	overflow: hidden;
+}

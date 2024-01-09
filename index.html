@@ -1,35 +1,169 @@
-<!DOCTYPE html>
-<html>
-<head lang='zh-hant-TW'>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<style>
+﻿<!DOCTYPE html>
+<html lang="zh-hant-TW">
+<!--修改自https://startbootstrap.com/template-overviews/modern-business/index.html-->
+<head>
 
-	<!--
-	a:link{color:#0000FF;text-decoration:none}
-	a:visited{color:#0000FF;text-decoration:none}
-	a:hover{background-color:#faf20a;color:#FF0000;text-decoration:none}
-	a:active {color:#0000FF;text-decoration:none}
-	p{	line-height: 150%;}
-	-->
-	</style>
-	<title>特色課程</title>
-	<base target="_blank">
+	
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>好好玩物理網 - 潘冠錡老師的網站</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="indexFolder/css/bootstrap.min.css" rel="stylesheet">
+    <link href="indexFolder/css/modern-business.css" rel="stylesheet">
+    <link href="indexFolder/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <!-- private CSS -->
+    <link href="indexFolder/css/myStyle.css" rel="stylesheet">
+    
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  
+
+    <base target="_blank">
 </head>
-<body background="icon/BACK2.jpg" bgproperties="fixed">
-	<h1>做動畫學物理</h1>
-	<h2>我在附中的特色課程</h2>
-	<hr>
-	<h1>
-		[<a href="course/course3DJS109/index.html">做動畫，學物理</a>](3D版)
-	</h1>
-	<h2>
-		<blockquote>
-		[<a href="course/studentProject112A/index.html">112上學生作品集</a>]<br>
-		</blockquote>
-	</h2>
-	
 
-	
+<body>
+
+    <!-- Navigation -->
+    <!-- 最上方瀏覽列，全部刪除 -->
+    
+    <!-- Header Carousel -->
+    <!-- 首頁輪播，改成固定 -->
+    <!-- 未完成 -->
+    <header id="myCarousel" class="carousel slide">
+        <!-- 滿版雲圖 -->
+        <div class="fill" style="background-image:url('indexFolder/titleHTML5/sky.jpg');"></div>
+        <!-- titleHTML5 -->
+        <div id="titleHTML5">
+            <canvas id="canvas" width="550" height="150" style="background-color:0"></canvas>
+        </div>
+    </header>
+
+
+
+
+
+    <!-- Header -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12" style="text-align:center;">
+                <h2>備用網站</h2>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <!-- Marketing Icons Section -->
+    <!-- 四大主題 -->
+    <!-- 待做：等高 -->
+    <section>
+        <div class="container">
+            <div class="row">
+                <br>
+                <div class="col-md-6">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <h4><i class="fa fa-fw fa-2x fa-html5"></i><span>&nbsp;教學動畫</span></h4>
+                        </div>
+                        <div class="panel-body">
+                            <p>提供老師教學時的輔助動畫。</p>
+                            <a href="content/TeachAnime/index.html" class="btn btn-primary">
+                                前往&nbsp;<i class="fa fa-external-link" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <h4><i class="fa fa-fw fa-2x fa-gamepad"></i><span>&nbsp;好玩遊戲</span></h4>
+                        </div>
+                        <div class="panel-body">
+                            <p>玩遊戲，增進學習物理的樂趣。</p>
+                            <a href="content/funGame/index.html" class="btn btn-primary">
+                                前往&nbsp;<i class="fa fa-external-link" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /.row -->
+    <!-- end 四大主題 -->
+
+
+    
+
+    
+    
+
+
+    <!-- Footer -->
+    <footer>
+      <hr>
+      	
+        
+        <div class="container">
+            <div class="row">
+                
+                
+                
+
+                
+                <div class="col-lg-12">
+                    <p align="right">Copyright&copy;好好玩物理網</p>
+
+
+                    
+
+                </div>
+
+                
+
+
+            </div>
+        </div>
+    </footer>
+
+    <!-- Footer -->
+    <!--footer style="background:#75A3D7; color:#FFF"-->
+    <!--footer>
+      <hr>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2">
+                    <a href="https://creativecommons.org/licenses/by-nd/3.0/tw/">
+                      <img src="indexFolder/pics/by-nd.png" class="img-responsive">
+                    </a>
+                </div>
+                <div class="col-lg-10">
+                    <h4 style="line-height:120%">分享、散佈、展示及演出本網站內容時，<br>請註明內容來自於「國立師大附中，潘冠錡老師的好好玩物理網」。</h4>
+                </div>
+            </div>
+        </div>
+    </footer-->
+
+    <!-- jQuery -->
+    <script src="indexFolder/js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="indexFolder/js/bootstrap.min.js"></script>
+
+    <!--JS for titleHTML5-->
+    <script src="indexFolder/titleHTML5/titleHTML5.js"></script>
+        
+
 </body>
+
 </html>

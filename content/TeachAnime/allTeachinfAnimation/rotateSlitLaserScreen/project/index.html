@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta lang="zh-hant-TW">
+		<meta charset="UTF-8">
+		<meta name="viewport" content="user-scalable=0">
+		<meta name="viewport" content="user-scalable=no">
+
+		<link rel="stylesheet" type="text/css" href="allData/css/myStyle.css">
+		<title>做動畫學物理</title>
+
+		
+	</head>
+
+	<body>
+		<div id="mainAnimation"></div>
+
+
+		<script id="2d-vertex-shader" type="x-shader/x-vertex">
+			attribute vec2 a_position;
+		  	void main() {
+			   gl_Position = vec4(a_position, 0, 1);
+		  	}
+		</script>
+	
+		<script id="2d-fragment-shader" type="x-shader/x-fragment">// <![CDATA[
+		#define NUM_STEPS   500
+		#define ZOOM_FACTOR 2.0
+		#define X_OFFSET    0.5
+		#define PI 3.1415926538
+		#ifdef GL_FRAGMENT_PRECISION_HIGH
+		precision highp float;
+	  	#else
+		precision mediump float;
+		#endif
+		precision mediump int;	
+		uniform float x0;
+		uniform float y0;
+		uniform float deltaTheta;
+		uniform float slitDir;
+		uniform float slitBB;
+		uniform float slitDD;
+		uniform float isInt;
+		void main() {
+			float theta=atan(900.0-gl_FragCoord.y+y0 , gl_FragCoord.x+x0);
+			theta=theta-slitDir;
+			float xxB=PI*slitBB*(sin(theta)-sin(deltaTheta));
+			float xxD=PI*slitDD*(sin(theta)-sin(deltaTheta));
+			float iii=cos(xxD)*((1.0-isInt)*sin(xxB)/xxB+isInt);
+			float intensity=sqrt(iii*iii);
+			gl_FragColor = vec4(0.0, intensity, 0.0, 1.0);
+	  	}
+	// ]]></script>
+
+
+	
+
+		<!--script external-->
+		<script src="allData/js/jquery/jquery-2.2.2.min.js"></script>
+		<script src="allData/js/createjs/tweenjs.min.js"></script>
+		<script src="allData/js/createjs/easeljs.min.js"></script>
+		<script src="allData/js/myScript.js"></script>
+
+	
+	</body>
+</html>

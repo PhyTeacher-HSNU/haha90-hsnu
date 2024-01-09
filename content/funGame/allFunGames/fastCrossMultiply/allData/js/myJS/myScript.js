@@ -1,0 +1,1 @@
+﻿var theWorld = new MyJS.TheWorld();

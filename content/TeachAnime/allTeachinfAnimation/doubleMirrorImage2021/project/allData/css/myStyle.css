@@ -1,0 +1,21 @@
+body{
+	background-color: #000;
+	padding: 0px;
+}
+
+#mainAnimation{
+	font-family : Cambria, Meiryo, myFontChinese, "Microsoft JhengHei", PMingLiU, 'Times New Roman', Times, serif;
+	margin: 0px auto;
+
+	/*noselect*/
+	-moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+
+	/*
+	Introduced in IE 10.
+	See http://ie.microsoft.com/testdrive/HTML5/msUserSelect/
+	*/
+	-ms-user-select: none;
+	user-select: none;
+}
