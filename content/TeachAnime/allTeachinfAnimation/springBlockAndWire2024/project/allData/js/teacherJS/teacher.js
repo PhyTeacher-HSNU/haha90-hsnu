@@ -208,7 +208,7 @@ world3D.cameraPhi=0*Math.PI/180;
 //Three.js
 world3D.scene = new THREE.Scene();
 var scene = world3D.scene;
-world3D.camera = new THREE.PerspectiveCamera( 45, 1600 / 900, 0.01, 100000 );
+world3D.camera = new THREE.PerspectiveCamera( 45, 1600 / 900, 1, 100000 );
 world3D.cameraTarget=new THREE.Vector3(0,0,0);
 world3D.cameraDragAndRotate=true;
 world3D.renderer = new THREE.WebGLRenderer({ canvas: canvas3D[0] , antialias: true });

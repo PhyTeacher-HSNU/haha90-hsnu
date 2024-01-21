@@ -195,7 +195,7 @@ function log(x){console.log(x);}
 					.append(generateAList('平面彈性碰撞','collision2D2023/collision2D2023.html', 'collision2D2023',['html5']))
 					.append('<li class="line">--- 彈簧與木塊 ---</li>')
 					.append(generateAList('水平彈簧雙振子','springBlockAH/springBlockAH.html', 'springBlockAH',['html5']))
-					.append(generateAList('彈簧自由落體','springBlockBFall/springBlockBFall.html', 'springBlockBFall',['html5']))
+					.append(generateAList('彈簧木塊細線','springBlockAndWire2024/springBlockAndWire2024.html', 'springBlockAndWire2024',['html5']))
 					.append(generateAList('落下物體壓彈簧','springBlockCV/springBlockCV.html', 'springBlockCV',['html5']))
 					.append(generateAList('鉛直雙振子壓放','springBlockDVPress/springBlockDVPress.html', 'springBlockDVPress',['html5']))
 					.append(generateAList('阻尼振盪','dampingOscillation2022/dampingOscillation2022.html', 'dampingOscillation2022',['html5']))
