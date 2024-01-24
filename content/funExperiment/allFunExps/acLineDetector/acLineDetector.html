@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+<html lang="zh-hant-TW">
+	<head>
+		
+    	<meta name="description" content="acLineDetector">
+    
+		<title>火線探測器</title>
+
+		<!--CSS-->
+		<link href="../../css/bootstrap.min.css" rel="stylesheet" type="text/css">
+		<link href="../../css/simple-sidebar.css" rel="stylesheet" type="text/css">
+		<link href="../../css/myStyle.css" rel="stylesheet" type="text/css">
+
+	</head>
+	<body>
+		<div id="oldContent">
+
+            <h1>火線探測器</h1>
+        	<hr>
+            <!--video-->
+			<video width="1280" height="720" controls>
+				<source src="acLineDetector.mp4" type="video/mp4">
+				Your browser does not support HTML5 video.    
+			</video>
+			<div class="yt">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/-OCuRFQTUN8?si=MYkuaRhp1QR8kDp-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+			</div>
+			
+
+			<img src="a01.jpg" width="600" height="1066"></p>
+			<p>↑火線探測器</p>
+
+
+			<img src="a02.jpg" width="800" height="450"></p>
+			<p>↑靠近插座連出來的電線一側，LED不發亮，是中性線。</p>
+
+
+			<img src="a03.jpg" width="800" height="450"></p>
+			<p>↑靠近插座連出來的電線另一側，LED發亮，是火線(活線)。</p>
+
+			<img src="a04.jpg" width="800" height="450"></p>
+			<p>↑也可以直接探測插座，較寬的應該要是中性線。</p>
+
+			<img src="a05.jpg" width="800" height="450"></p>
+			<p>↑插座較窄的應該要是火線，比較不靈敏，所以天線用長一點。</p>
+
+			<img src="a06.jpg" width="800" height="450"></p>
+			<p>↑放在高壓電源旁邊，因為電壓很高，距離遠遠的LED就亮了。</p>
+
+
+			<img src="a07.png" width="777" height="460"></p>
+			<p>↑電路圖，圖片來源&nbsp;&nbsp;http://makezine.com/projects/non-contact-voltage-detector/</p>
+			<h4>2017/07/03</h4>
+
+			<hr>
+			<h2>用火線探測器測試正負靜電</h2>
+			<p>火線探測的原理是利用空間中電場變化造成的微小電流，當電流流「入」天線時，電晶體導通而使LED發亮。</p>
+			<p>如果把上述的2N3904(npn)電晶體換成2N3906(pnp)，就會變成電流流「出」天線時，電晶體導通而使LED發亮。</p>
+ 			
+ 			<!--video-->
+			<video width="1280" height="720" controls>
+				<source src="electricDetector.mp4" type="video/mp4">
+				Your browser does not support HTML5 video.    
+			</video>
+			<div class="yt">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/82KZetkNzSg?si=KwKwJhwOEMP3tPJu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+			</div>
+			<p>↑可以區分正電與負電的火線探測器。</p>
+
+			<img src="b01.jpg" width="800" height="379"></p>
+			<p>↑電路圖。</p>
+
+			<img src="b02.jpg" width="800" height="450"></p>
+			<p>↑長得跟正的很像。</p>
+			<h4>2017/12/24</h4>
+		
+		</div>
+                
+
+
+	<!-- script -->
+    <script src="../../js/jquery.js"></script>
+    <script src="../../js/bootstrap.min.js"></script>
+    <script src="../../js/myScript.js"></script>
+
+    
+	</body>
+</html>
