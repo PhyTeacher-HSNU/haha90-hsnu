@@ -28,6 +28,7 @@ function log(x){console.log(x);}
 	let yt=true;
 	if(yt){//移除 video
 		$('video').remove();
+		$('.yt').after("<p></p>");
 	}else{//移除 YT
 		$('.yt').remove();
 	}
